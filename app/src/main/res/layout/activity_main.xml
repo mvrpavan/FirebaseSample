@@ -7,13 +7,21 @@
     android:padding="@dimen/activity_vertical_margin"
     tools:context="com.freelanceinc.mvrpavan.firebasesample.MainActivity">
 
+    <Button
+        android:text="Authentication Demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/btnAuthDemo" />
 
     <Button
         android:text="Database Demo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
+        android:layout_below="@id/btnAuthDemo"
         android:id="@+id/btnDatabaseDemo" />
+
 </RelativeLayout>

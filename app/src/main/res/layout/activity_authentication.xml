@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_authentication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.freelanceinc.mvrpavan.firebasesample.AuthenticationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@android:color/background_light">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:text="User Registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/editTextRegisterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView1"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPersonName"
+                    android:hint="Name"/>
+
+                <EditText
+                    android:id="@+id/editTextRegisterEmailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextRegisterName"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email Address"/>
+
+                <EditText
+                    android:id="@+id/editTextRegisterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextRegisterEmailID"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:hint="Password"/>
+
+                <Button
+                    android:id="@+id/btnRegisterUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextRegisterPassword"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Register User"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout1"
+                android:padding="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Login"/>
+
+                <EditText
+                    android:id="@+id/editTextLoginEmailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email Address"/>
+
+                <EditText
+                    android:id="@+id/editTextLoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextLoginEmailID"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    android:hint="Password"/>
+
+                <TextView
+                    android:id="@+id/textViewLoginStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextLoginPassword"
+                    android:text=""/>
+
+                <Button
+                    android:id="@+id/btnLoginSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewLoginStatus"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Sign In"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout2"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/background_light">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Details"/>
+
+                <EditText
+                    android:id="@+id/editTextDetailsEmailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView3"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email Address"/>
+
+                <TextView
+                    android:id="@+id/textViewDetailsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextDetailsEmailID"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18dp"
+                    android:hint="Name"/>
+
+                <Button
+                    android:id="@+id/btnDetailsUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDetailsName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Get User Details"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout3"
+                android:padding="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remove User"/>
+
+                <EditText
+                    android:id="@+id/editTextRemoveEmailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView4"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email Address"/>
+
+                <Button
+                    android:id="@+id/btnRemoveUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextRemoveEmailID"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Un Register"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

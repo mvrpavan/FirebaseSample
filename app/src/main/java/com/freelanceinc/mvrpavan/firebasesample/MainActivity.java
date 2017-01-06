@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnDatabaseDemo;
+    Button btnDatabaseDemo, btnAuthDemo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,11 +16,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnDatabaseDemo = (Button) findViewById(R.id.btnDatabaseDemo);
+        btnAuthDemo = (Button) findViewById(R.id.btnAuthDemo);
 
         btnDatabaseDemo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DatabaseDemoActivity.class));
+            }
+        });
+
+        btnAuthDemo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AuthenticationActivity.class));
             }
         });
     }
